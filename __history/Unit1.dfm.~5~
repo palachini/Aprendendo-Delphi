@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Calculadora'
+  ClientHeight = 211
+  ClientWidth = 396
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 152
+    Top = 26
+    Width = 33
+    Height = 13
+    Caption = 'Valor 2'
+  end
+  object Label2: TLabel
+    Left = 49
+    Top = 26
+    Width = 33
+    Height = 13
+    Caption = 'Valor 1'
+  end
+  object Label3: TLabel
+    Left = 270
+    Top = 26
+    Width = 48
+    Height = 13
+    Caption = 'Resultado'
+  end
+  object EdtResult: TEdit
+    Left = 270
+    Top = 45
+    Width = 89
+    Height = 21
+    TabOrder = 3
+  end
+  object BtnSomar: TButton
+    Left = 49
+    Top = 83
+    Width = 39
+    Height = 25
+    Caption = '+'
+    TabOrder = 2
+    OnClick = BtnSomarClick
+  end
+  object EdtValue1: TEdit
+    Left = 49
+    Top = 45
+    Width = 71
+    Height = 21
+    TabOrder = 0
+  end
+  object EdtValue2: TEdit
+    Left = 152
+    Top = 45
+    Width = 71
+    Height = 21
+    TabOrder = 1
+  end
+  object BtnSubtrair: TButton
+    Left = 94
+    Top = 83
+    Width = 39
+    Height = 25
+    Caption = '-'
+    TabOrder = 4
+    OnClick = BtnSubtrairClick
+  end
+  object BtnMultiplicar: TButton
+    Left = 139
+    Top = 83
+    Width = 39
+    Height = 25
+    Caption = 'x'
+    TabOrder = 5
+    OnClick = BtnMultiplicarClick
+  end
+  object BtnDividir: TButton
+    Left = 184
+    Top = 83
+    Width = 39
+    Height = 25
+    Caption = '/'
+    TabOrder = 6
+    OnClick = BtnDividirClick
+  end
+end

@@ -1,0 +1,82 @@
+unit Unit1;
+
+  interface
+
+  uses
+    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+    Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+  type
+    TFormCalculadora = class(TForm)
+    EdtResult: TEdit;
+    BtnSomar: TButton;
+    EdtValue1: TEdit;
+    EdtValue2: TEdit;
+    BtnSubtrair: TButton;
+    BtnMultiplicar: TButton;
+    BtnDividir: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    procedure BtnSomarClick(Sender: TObject);
+    procedure BtnSubtrairClick(Sender: TObject);
+    procedure BtnMultiplicarClick(Sender: TObject);
+    procedure BtnDividirClick(Sender: TObject);
+    private
+      { Private declarations }
+      function somar(Value1, Value2: Integer) : Integer;
+      function subtrair(Value1, Value2: Integer) : Integer;
+      function multiplicar(Value1,Value2: Integer) : Integer;
+      function dividir(Value1, Value2: Integer) : Double;
+    public
+      { Public declarations }
+    end;
+
+  var
+    FormCalculadora: TFormCalculadora;
+
+implementation
+  {$R *.dfm}
+
+  { TForm1 }
+
+procedure TFormCalculadora.BtnDividirClick(Sender: TObject);
+begin
+  EdtResult.Text := FloatToStr(dividir(StrToInt(EdtValue1.Text), StrToInt(EdtValue2.Text)))
+end;
+
+procedure TFormCalculadora.BtnMultiplicarClick(Sender: TObject);
+begin
+  EdtResult.Text := IntToStr(multiplicar( StrToInt(EdtValue1.text), StrToInt(EdtValue2.text)))
+end;
+
+procedure TFormCalculadora.BtnSomarClick(Sender: TObject);
+begin
+  EdtResult.text := IntToStr(somar(StrToInt(EdtValue1.text), StrToInt(EdtValue2.text)));
+end;
+
+procedure TFormCalculadora.BtnSubtrairClick(Sender: TObject);
+begin
+  EdtResult.text := IntToStr(subtrair(StrToInt(EdtValue1.text),StrToInt(EdtValue2.text)))
+end;
+
+function TFormCalculadora.dividir(Value1, Value2: Integer): Double;
+begin
+  Result := Value1 / Value2
+end;
+
+function TFormCalculadora.multiplicar(Value1, Value2: Integer): Integer;
+begin
+  Result := Value1 * Value2
+end;
+
+function TFormCalculadora.somar(Value1, Value2: Integer): Integer;
+begin
+  Result := Value1 + Value2
+end;
+
+function TFormCalculadora.subtrair(Value1: Integer; Value2: Integer): Integer;
+begin
+  Result := Value1 - Value2
+end;
+end.

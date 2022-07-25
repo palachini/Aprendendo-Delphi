@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/25 15:58:53.000.661,=C:\Users\Palachini\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/25 15:59:50.000.464,C:\Users\Palachini\Documents\Delphi\Unit1.dfm=C:\Users\Palachini\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/07/25 15:59:50.000.464,C:\Users\Palachini\Documents\Delphi\Unit1.pas=C:\Users\Palachini\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/25 16:07:12.000.872,C:\Users\Palachini\Documents\Delphi\Project1.dproj=C:\Users\Palachini\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/25 18:31:29.408,C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Calculadora.dproj=C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Project1.dproj</Transaction>
+    <Transaction>2022/07/25 18:31:55.380,C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Calculadora.pas=C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/07/25 18:31:55.380,C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Calculadora.dfm=C:\Users\Palachini\Documents\Estudos\Delphi\Aprendendo-Delphi\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

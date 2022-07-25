@@ -1,0 +1,58 @@
+unit Unit1;
+
+  interface
+
+  uses
+    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+    Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+  type
+    TForm1 = class(TForm)
+    EdtResult: TEdit;
+      Button1: TButton;
+    EdtValue1: TEdit;
+    EdtValue2: TEdit;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    private
+      { Private declarations }
+      function somar(Value1, Value2: Integer) : Integer;
+      function subtrair(Value1, Value2: Integer) : Integer;
+      function multiplicar(Value1,Value2: Integer) : Integer;
+      function dividir(Value1, Value2: Integer) : Double;
+    public
+      { Public declarations }
+    end;
+
+  var
+    Form1: TForm1;
+
+implementation
+  {$R *.dfm}
+
+  { TForm1 }
+
+function TForm1.dividir(Value1, Value2: Integer): Double;
+  begin
+    Result := Value1 / Value2
+  end;
+
+function TForm1.multiplicar(Value1, Value2: Integer): Integer;
+  begin
+    Result := Value1 * Value2
+  end;
+
+function TForm1.somar(Value1, Value2: Integer): Integer;
+  begin
+    Result := Value1 + Value2
+  end;
+
+function Tform1.subtrair(Value1: Integer; Value2: Integer): Integer;
+  begin
+    Result := Value1 - Value2
+  end;
+end.
